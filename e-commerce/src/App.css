@@ -1,0 +1,157 @@
+
+body {
+  display: flex;
+  background-color: rgb(4, 4, 244);
+  margin: 0;
+  padding: 0;
+}
+
+
+.common {
+  width: 100vw;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 0vw;
+  padding-right: 3vw;
+  box-sizing: border-box;
+  background-color: #fdf3fd;
+  height: 15vh;
+}
+.mobile-header {
+  display: none;
+}
+
+.header img {
+  height: 16vh;
+  width: 12vw;
+}
+
+.header p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 2px green;
+  font-weight: 500;
+}
+
+.main-content {
+  background-color: white;
+  min-height: 80vh;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.card {
+  width: 250px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 150px;
+  height: 200px;
+}
+input {
+  background-color: whitesmoke; 
+  color: black;            
+  border: 1px solid #ccc;  
+  padding: 8px;            
+}
+textarea {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+select#rating {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.footer {
+  background-color: #fdf3fd;
+  height: 10vh;
+  gap: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.system-menu {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  font-size: 18px;
+  font-weight: 500;
+  list-style-type:none;
+} 
+.menu-icon {
+  display: none;
+}
+@media (max-width: 800px) {
+  .navlinks {
+    width:60vw;
+    text-align:left;
+    display: flex;
+  }
+  .menu-icon {
+    display: flex;
+    font-size: 24px;
+    cursor: pointer;
+  }
+   @media (max-width: 800px) {
+    .menu-icon {
+      display: flex;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  .mobile-menu {
+    display: block;
+    position: absolute;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    
+  }
+  .system-menu.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15vh;
+    right: 3vw;
+    background-color: #fdf3fd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px gray;
+  }
+  .mobile-menu li {
+    background-color: antiquewhite;
+    margin:10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30vw;
+  }
+  .mobile-menu li:hover {
+    background-color: white;
+
+  }
+  .mobile-menu a {
+    color:inherit;
+  }
+}
