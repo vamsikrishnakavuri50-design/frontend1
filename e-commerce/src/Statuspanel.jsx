@@ -4,7 +4,7 @@ import Pc from "./ProfileCard.jsx";
 
   //props = {"id": "31227", "name": "K.vamsi krishna", "email": "2500031227@kluniversity.in"}
 
-function StatusPanel(props = {...obj}) {
+function StatusPanel(props = {}) {
   //var id = 31227, name = "M.Dhanesh Vardhan", email = "2500031227@kluniversity.in";
   const [id, setId] = useState("31227");
   const [name, setName] = useState("K.vamsi krishna");
@@ -22,15 +22,15 @@ function StatusPanel(props = {...obj}) {
           </tr>
           <tr>
             <td>ID</td>
-            <td>: <input type="text" onChange={(event) => setId(event.target.style.display= "none")} /></td>
+            <td>: <input type="text" onChange={(event) => setId(event.target.value)} /></td>
           </tr>
           <tr>
             <td>Name</td>
-            <td>: <input type="text" onChange={(event) =>{{ document.getElementsByTagName("input")[0].style.display = "block" }}} /></td>
+            <td>: <input type="text" onChange={(event) => setName(event.target.value)} /></td>
           </tr>
           <tr>
             <td>Email</td>
-            <td>: <input type="email" onChange={(event) => setEmail(event.target.value)} /></td>
+            <td>: <input type="email" onChange={(e) => setEmail(e.target.value)} /></td>
           </tr>
           <tr>
             <td colSpan={2} style={{ textAlign: "center" }}>

@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Feedback from './Feedback'
 import Product from './Product'
 import Signin from './Signin'
 import Signup from './Signup'
 import Admin from './Admin'
 import Contactus from './Contactus'
-import Cart from './cart'
+import Cart from './Cart'
 
 function MainContent() {
   return (

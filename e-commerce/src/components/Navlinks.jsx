@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navlinks() {
     function toggleMenuStyle() {
@@ -11,13 +12,13 @@ function Navlinks() {
     <div className="navlinks">
         <div onClick={toggleMenuStyle} className="menu-icon">&#9776;</div>
         <ul className="system-menu">
-            <li><a href="/signin">Signin</a></li>
-            <li><a href="/signup">signup</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/feedback">Feedback</a></li>
-            <li><a href="/admin">Admin</a></li>
-            <li><a href="/contact us">Contact Us</a></li>
-            <li><a href="/cart">Cart</a></li>
+            <li><Link to="/signin">Signin</Link></li>
+            <li><Link to="/signup">signup</Link></li>
+            <li><Link to="/products">Products</Link></li>
+            <li><Link to="/feedback">Feedback</Link></li>
+            <li><Link to="/admin">Admin</Link></li>
+            <li><Link to="/contactus">Contact Us</Link></li>
+            <li><Link to="/cart">Cart</Link></li>
         </ul>
 
     </div>

@@ -11,7 +11,7 @@ function Cart() {
     const navigate = useNavigate();
 
     function handleSubmit() {
-        alert("Payment Successful! Total Amount: ₹" + cartItems.reduce((sum, item) => sum + item.price, 0))
+        alert("Payment Successful! Total Amount: Rs. " + cartItems.reduce((sum, item) => sum + item.price, 0))
         localStorage.removeItem('cart');
         navigate("/products")
     }
@@ -34,7 +34,7 @@ function Cart() {
 
         {cartItems.map((item, index)=>{
           return (
-            <tr>
+            <tr key={`${item.id ?? item.title}-${index}`}>
               <td> {item.title.substring(0, 20)} </td>
               <td> {item.price} </td>
             </tr>
