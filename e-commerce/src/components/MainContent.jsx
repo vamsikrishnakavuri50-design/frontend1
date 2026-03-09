@@ -6,7 +6,7 @@ import Signin from './Signin'
 import Signup from './Signup'
 import Admin from './Admin'
 import Contactus from './Contactus'
-import Cart from './Cart'
+import Cart from './cart'
 
 function MainContent() {
   return (
