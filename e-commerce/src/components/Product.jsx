@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../App.css'
 import Template from '../Templete.jsx'
 import ShowProduct from './ShowProduct.jsx'
-import Cart from './cart.jsx'
+import Cart from './cartcomponents.jsx'
 
 function Product() {
 
